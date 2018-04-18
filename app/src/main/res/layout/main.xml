@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <vn.manroid.test.SegmentedRadioGroup
+        android:id="@+id/segment_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:checkedButton="@+id/button_one"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@id/button_one"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_height="33dip"
+            android:layout_width="40dip"
+            android:text="One"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/radio_colors" />
+
+        <RadioButton
+            android:id="@+id/button_two"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_height="33dip"
+            android:layout_width="40dip"
+            android:text="Two"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/radio_colors" />
+
+        <RadioButton
+            android:id="@+id/button_three"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_height="33dip"
+            android:layout_width="40dip"
+            android:text="Two"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/radio_colors" />
+
+    </vn.manroid.test.SegmentedRadioGroup>
+
+    <vn.manroid.test.SegmentedRadioGroup
+        android:id="@+id/segment_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:checkedButton="@+id/button_add"
+        android:orientation="horizontal">
+
+        <vn.manroid.test.CenteredRadioImageButton
+            android:id="@id/button_add"
+            android:button="@android:drawable/ic_menu_add"
+            android:layout_height="33dip"
+            android:layout_width="40dip" />
+
+        <vn.manroid.test.CenteredRadioImageButton
+            android:id="@+id/button_call"
+            android:button="@android:drawable/ic_menu_call"
+            android:layout_height="33dip"
+            android:layout_width="40dip" />
+
+        <vn.manroid.test.CenteredRadioImageButton
+            android:id="@+id/button_camera"
+            android:button="@android:drawable/ic_menu_camera"
+            android:layout_height="33dip"
+            android:layout_width="40dip" />
+
+    </vn.manroid.test.SegmentedRadioGroup>
+
+</LinearLayout>
